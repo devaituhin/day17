@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main-div{
+    width: 960px;
+    margin: auto;
+    font-family: sans-serif,serif;
+}
+.header-menu{
+    background: #000;
+    height: 120px;
+    line-height: 120px;
+    /* padding:10px 0px */
+}
+.header-menu ul{
+    text-align: center;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -5px;
+    text-align: center;
+    position: relative;
+}
+.header-menu ul li a{
+    color:#ddd;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0px 25px;
+}
+.header-menu ul li:hover > a{
+    color: #fff;
+    transition: .4s;
+    font-weight: bold;
+    
+}
+
+/* Dropdown-Menu */
+
+.header-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 250px;
+    margin-top: -1px;
+}
+.header-menu ul li ul li{
+    display: block;
+    /* height: 50px; */
+    line-height: 50px;
+    position: relative;
+}
+.header-menu ul li ul li:first-child a{
+    border-top: 4px solid rgb(66, 114, 215);
+}
+.header-menu ul li ul li a{
+    display: block;
+    background-color: #000;
+    border-bottom: 1px dotted #eee;
+}
+.header-menu ul li ul li a:hover{
+    background-color: rgb(66, 114, 215);
+}
+/* Hover Part */
+.header-menu ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    transform: scaley(0);
+    transform-origin: top center;
+    transition: .5s;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaley(1);
+}
+/* Mega Menu */
+
+.header-menu ul li ul li ul{
+    position: absolute;
+    top: 0px;
+    left: 210px;
+    /* width: 250px; */
+}
+.header-menu ul li ul li ul li a{
+    display: block;
+}
+.header-menu ul li ul li ul{
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: scaley(0) !important;
+    transform-origin: top center;
+    transition: .5s;
+}
+.header-menu ul li ul li:hover ul{
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: scaley(1) !important;
+}
+/* Slider Part */
+
+.slider{
+    background-image: url(https://wallpaperheart.com/wp-content/uploads/2018/03/hd-background-wallpapers-free-amazing-cool-tablet-high-definition.jpg);
+    background-position:bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 550px;
+    text-align: center;
+}
+.slider h1{
+    background: #fff;
+    color: #000;
+    display: inline-block;
+    padding: 10px 16px;
+    margin-top: 200px;
+
+}
+.slider p{
+    background: #fff;
+    color: #000;
+    margin: 15px 18px;
+    font-size: 20px;
+
+}
+.slider button{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight:bold;
+    font-size: 15px;
+    padding: 8px 15px;
+    border: 1px dotted #fff;
+    margin-top: 5px;
+}
+.slider button:hover{
+    background-color: #fff;
+    color: black;
+    transition: .6s;
+}
+/* Footer Part */
+
+.footer{
+    background: black;
+    text-align: center;
+    
+} 
+.footer p{
+    color: #fff;
+    padding-top: 10px;
+}
+.footer ul li {
+    display: inline-block;
+    margin-left: -5px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+.footer ul li a {
+    display: inline-block;
+    background-color: rgb(94, 165, 250);
+    color: black;
+    margin: 7px 23px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.footer ul li a:hover{
+    background-color: #fc5c65;
+    transform: scale(1.2);
+}
